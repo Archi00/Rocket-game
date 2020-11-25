@@ -62,7 +62,7 @@ export default class RetryScene extends Phaser.Scene {
       }
     );
     this.add.text(
-      this.cameras.main.width / 2.65,
+      this.cameras.main.width / 2.63,
       this.cameras.main.height * 0.6,
       `Want to try again?`,
       {
