@@ -17,9 +17,9 @@ export default class ShieldUI extends Phaser.Scene {
       setScale: { x: 0.2, y: 0.2 },
       quantity: 3,
       setXY: {
-        x: this.cameras.main.width * 0.5,
-        y: this.cameras.main.height - 10,
-        stepX: 40,
+        x: 10,
+        y: 10,
+        stepX: 35,
       },
     });
     sceneEvents.on('shield-state', this.onShieldStateChange, this);

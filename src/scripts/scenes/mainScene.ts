@@ -58,7 +58,7 @@ export default class MainScene extends Phaser.Scene {
       this.spaceship.body.velocity.x < -50 ||
       this.spaceship.body.velocity.y < -50
     ) {
-      this.scene.start('StartingScene');
+      this.scene.start('retryScene');
     } else {
       this.scene.start('WinningScene');
     }

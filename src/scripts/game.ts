@@ -4,6 +4,7 @@ import PreloadScene from './scenes/preloadScene';
 import WinningScene from './scenes/winningScene';
 import StartingScene from './scenes/startingScene';
 import ShieldUI from './scenes/shieldUI';
+import RetryScene from './scenes/retryScene';
 
 const DEFAULT_WIDTH = 1280;
 const DEFAULT_HEIGHT = 720;
@@ -17,7 +18,7 @@ const config: Phaser.Types.Core.GameConfig = {
     width: DEFAULT_WIDTH,
     height: DEFAULT_HEIGHT,
   },
-  scene: [StartingScene, PreloadScene, MainScene, WinningScene, ShieldUI],
+  scene: [StartingScene, PreloadScene, MainScene, WinningScene, RetryScene, ShieldUI],
   physics: {
     default: 'arcade',
     arcade: {

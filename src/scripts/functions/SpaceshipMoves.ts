@@ -1,6 +1,6 @@
 import Spaceship from '../objects/Spaceship';
 
-let speed = 0;
+let speed = 15;
 const moveLeft = (spaceship) => {
   spaceship.setAccelerationX(speed * 0.5 * -Math.cos(spaceship.angle * (Math.PI / 180)));
   spaceship.setAccelerationY(speed * 0.5 * -Math.sin(spaceship.angle * (Math.PI / 180)));
@@ -21,7 +21,7 @@ const moveUp = (spaceship) => {
 };
 
 const moveDown = (spaceship) => {
-  speed -= 5;
+  speed -= 10;
 
   spaceship.setAccelerationX(speed * Math.cos((spaceship.angle - 90) * (Math.PI / 180)));
   spaceship.setAccelerationY(speed * Math.sin((spaceship.angle - 90) * (Math.PI / 180)));
