@@ -231,7 +231,7 @@ export default class MainScene extends Phaser.Scene {
 
     this.spaceship = new Spaceship(this, 40, this.cameras.main.height / 1.05)
       .setScale(0.06)
-      .setTint(0x717275);
+      .setTint(0xffffff);
     this.physics.add.collider(
       this.barren,
       this.spaceship,
